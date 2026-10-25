@@ -72,11 +72,26 @@ export interface ProjectItem {
   title: string;
   description: string;
   stack: string[];
+  demoUrl?: string;
   url: string;
   image: string;
 }
 
 export const personalProjects: ProjectItem[] = [
+    {
+  title: 'Color Mixing & Bottle Filling Control System',
+  description:
+    'Simulated batch process for recipe-based color mixing and bottle filling using Siemens S7-1500 and WinCC Runtime Advanced. Features manual/automatic operation, recipe selection, timed dosing and mixing, conveyor handling, capping, and tank washing.',
+  stack: [
+    'Siemens S7-1500',
+    'SCADA',
+    'WinCC Runtime Advanced',
+    'VBScript',
+  ],
+  url: 'https://github.com/nhat0508/color-mixing-filling',
+  demoUrl: 'https://youtu.be/swesyQsCNtE',
+  image: '/color_mixing_filling.png',
+},
   {
     title: "Nhat Nguyen's Portfolio",
     description:
